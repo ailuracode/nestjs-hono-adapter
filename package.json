@@ -48,7 +48,7 @@
     "format:check": "oxfmt --check .",
     "lint": "oxlint .",
     "lint:fix": "oxlint --fix .",
-    "prepack": "bun run clean && bun run build",
+    "prepack": "rm -rf dist *.tsbuildinfo && tsc -p tsconfig.json",
     "prepare": "tsc -p tsconfig.json",
     "test": "bun test",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p test/tsconfig.json"
