@@ -49,6 +49,7 @@
     "lint": "oxlint .",
     "lint:fix": "oxlint --fix .",
     "prepack": "bun run clean && bun run build",
+    "prepare": "tsc -p tsconfig.json",
     "test": "bun test",
     "typecheck": "tsc -p tsconfig.json --noEmit && tsc -p test/tsconfig.json"
   },
