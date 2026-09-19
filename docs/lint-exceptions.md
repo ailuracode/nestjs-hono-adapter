@@ -1,7 +1,7 @@
 # Lint rule exceptions
 
 The lint configuration is the one the parent repository
-(`ailuracode/cactu-care`) uses, copied here with the path-scoped
+(`ailura/cactu-care`) uses, copied here with the path-scoped
 overrides rewritten for this package's layout. Every rule that
 is off, and every rule pinned away from its default, is listed
 with its reason. Do not add one without a written reason.

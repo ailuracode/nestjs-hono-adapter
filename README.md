@@ -1,4 +1,4 @@
-# @ailuracode/nestjs-hono-adapter
+# @ailura/nestjs-hono-adapter
 
 An HTTP adapter that runs a NestJS application on
 [Hono](https://hono.dev), with no Express or Fastify underneath.
@@ -15,11 +15,11 @@ owning the adapter is the smaller cost.
 ## Install
 
 ```sh
-bun add @ailuracode/nestjs-hono-adapter hono @hono/node-server
+bun add @ailura/nestjs-hono-adapter hono @hono/node-server
 ```
 
 ```sh
-npm install @ailuracode/nestjs-hono-adapter hono @hono/node-server
+npm install @ailura/nestjs-hono-adapter hono @hono/node-server
 ```
 
 `@nestjs/common`, `@nestjs/core`, `hono` and `@hono/node-server`
@@ -30,7 +30,7 @@ versions.
 
 ```ts
 import { NestFactory } from '@nestjs/core';
-import { ServerAdapter } from '@ailuracode/nestjs-hono-adapter';
+import { ServerAdapter } from '@ailura/nestjs-hono-adapter';
 
 import { AppModule } from './app.module.ts';
 
@@ -269,7 +269,7 @@ subpath so an HTTP-only deployment never resolves
 peers, and neither is installed for the routes above.
 
 ```ts
-import { HonoWsAdapter } from '@ailuracode/nestjs-hono-adapter/ws';
+import { HonoWsAdapter } from '@ailura/nestjs-hono-adapter/ws';
 
 const adapter = new ServerAdapter();
 const app = await NestFactory.create(AppModule, adapter);

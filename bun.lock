@@ -3,7 +3,7 @@
   "configVersion": 1,
   "workspaces": {
     "": {
-      "name": "@ailuracode/nestjs-hono-adapter",
+      "name": "@ailura/nestjs-hono-adapter",
       "devDependencies": {
         "@hono/node-server": "^2.1.1",
         "@hono/node-ws": "^1.3.1",
